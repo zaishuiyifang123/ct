@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+}
+
+.w {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+    line-height: 31px;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.register {
+    color: red;
+    margin-left: 10px;
+}
+
+.shortcut .w .fr ul li {
+    float: left;
+}
+
+.shortcut .w .fr ul li:nth-child(2n) {
+    float: left;
+    width: 0;
+    border: 1px solid rgba(0, 0, 0, .3);
+    height: 12px;
+    margin: 9px 14px;
+}
+
+.shortcut .w .fr ul .font-icon::after {
+    margin-left: 10px;
+    content: "\e91e";
+    font-family: 'icomoon';
+}
+
+.header {
+    position: relative;
+    height: 105px;
+    /* background-color: aqua; */
+}
+
+.header .logo {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 171px;
+    height: 61px;
+}
+
+.header .logo h1 a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    background: url(../logo.png) no-repeat;
+    font-size: 0;
+}
+
+.header .search {
+    position: absolute;
+    top: 25px;
+    left: 348px;
+    width: 538px;
+    height: 36px;
+    border: 1px solid red;
+}
+
+.header .search input[type="search"] {
+    float: left;
+    padding-left: 10px;
+    width: 454px;
+    height: 32px;
+}
+
+.header .search input[type="submit"] {
+    float: right;
+    width: 82px;
+    height: 34px;
+    background-color: red;
+    font-size: 16px;
+    color: white;
+}
+
+.header .hot {
+    position: absolute;
+    bottom: 15px;
+    left: 348px;
+}
+
+.header .hot li {
+    float: left;
+    margin-left: 25px;
+}
+
+.header .hot li .first-a {
+    color: red;
+}
+
+.header .count {
+    position: absolute;
+    top: 25px;
+    right: 62px;
+    width: 140px;
+    height: 31px;
+    background-color: #f7f7f7;
+    font-size: 12px;
+    text-align: center;
+    line-height: 31px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+}
+
+.header .count::before {
+    content: "\e93a";
+    font-family: 'icomoon';
+    margin-right: 5px;
+    color: red;
+}
+
+.header .count::after {
+    position: absolute;
+    top: 1px;
+    right: 13px;
+    content: "\e920";
+    font-family: 'icomoon';
+}
+
+.header .count .num {
+    position: absolute;
+    top: -4px;
+    left: 105px;
+    width: 16px;
+    height: 13px;
+    background-color: red;
+    border-radius: 8px 8px 8px 0;
+    line-height: 13px;
+    text-align: center;
+    color: white;
+}
